@@ -167,7 +167,6 @@ def init_apod_cache(parent_dir):
     global image_cache_db
     image_cache_db = db_path
 def add_apod_to_cache(apod_date):
-   
     # TODO: Download the APOD information from the NASA API
     apod_info_dict = apod_api.get_apod_info(apod_date)
     # TODO: Download the APOD image

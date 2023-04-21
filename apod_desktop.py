@@ -215,12 +215,9 @@ def add_apod_to_db(title, explanation, file_path, sha256):
 
 def get_apod_id_from_db(image_sha256):
     """Gets the record ID of the APOD in the cache having a specified SHA-256 hash value
-    
     This function can be used to determine whether a specific image exists in the cache.
-
     Args:
         image_sha256 (str): SHA-256 hash value of APOD image
-
     Returns:
         int: Record ID of the APOD in the image cache DB, if it exists. Zero, if it does not.
     """
@@ -286,7 +283,7 @@ def get_apod_info(image_id):
 
     Args:
         image_id (int): ID of APOD in the DB
-
+        
     Returns:
         dict: Dictionary of APOD information
     """
@@ -314,7 +311,6 @@ def get_apod_info(image_id):
 
 def get_all_apod_titles():
     """Gets a list of the titles of all APODs in the image cache
-
     Returns:
         list: Titles of all images in the cache
     """

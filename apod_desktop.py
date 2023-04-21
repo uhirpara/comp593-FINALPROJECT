@@ -59,7 +59,7 @@ def get_apod_date():
     The APOD date is taken from the first command line parameter.
     Validates that the command line parameter specifies a valid APOD date.
     Prints an error message and exits script if the date is invalid.
-    Uses today's date if no date is provided on the command line.
+    It will Use today's date if no date is provided on the command line.
 
 
     Returns:
@@ -215,7 +215,7 @@ def add_apod_to_db(title, explanation, file_path, sha256):
 
 def get_apod_id_from_db(image_sha256):
     """Gets the record ID of the APOD in the cache having a specified SHA-256 hash value
-    This function can be used to determine whether a specific image exists in the cache.
+    -This function can be used to determine whether a specific image exists in the cache.
     Args:
         image_sha256 (str): SHA-256 hash value of APOD image
     Returns:

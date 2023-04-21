@@ -208,7 +208,7 @@ def add_apod_to_db(title, explanation, file_path, sha256):
                      (date.isoformat(datetime.date.today()), title, explanation, file_path, sha256))
         conn.commit()  # Commit the changes
         conn.close()  # Close the connection
-        c.execute("SELECT * FROM users WHERE image_hash=?", (sha256,))
+       
         result = c.fetchone()
         id = result[0]
     return id
